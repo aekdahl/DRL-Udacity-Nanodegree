@@ -18,7 +18,7 @@ We are training the agents on 1000 episodes with a maximum of 1000 iterations (t
 - Number of states: 33
 - Number of possible actions: 4 
     - *Corresponding to the torque of the double-jointed arm*
-    - *each action value are clipped to stay within the -1,1 boundary*
+    - *Each action value are clipped to stay within the (-1,1) boundary*
 - Rewards: 
     - Correct location per timestep: +0.1
 
@@ -50,7 +50,7 @@ Agent Parameters:
 - Episodes: 1000
 - Maximum timesteps: 1000
 
-Deep Deterministic Policy Gradient (DDPG):
+#### Deep Deterministic Policy Gradient (DDPG)
 As indicated in the project information pages, I set out to use the DDPG algorithm to solve the task. I started from the DDPG model implemented in the Pendulum example at Udacity and expanded on it to utilize multiple agents (20). Initially, the learning was disapointing and it was very hard to get any decent scores using only this modified version of the pendulum implementation. Two further tweaks made major improvements to the model, 1) Gradient clipping and 2) Batch normalization.
 
 The gradient clipping made the model more reliable by avoiding too large gradients, and thereby weights, preventing the model from learning properly. Implementing the clipping as hinted in the projects benchmark implementation using torch.nn.utils.clip_grad_norm_(self.critic_local.parameters(), 1) on the critic introduced an upper limit of the gradients that improved the learning of the algorithm.
