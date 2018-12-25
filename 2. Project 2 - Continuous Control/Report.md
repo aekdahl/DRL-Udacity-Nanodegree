@@ -25,7 +25,7 @@ We are training the agents on 1000 episodes with a maximum of 1000 iterations (t
 The model is a Deep Neural Network with 3 fully connected layers. It takes the 33 different states from the state vector as input, and outputs the action represented by a vector containing four continouos values. 
 - Input: state_size (33), Output: 400
 - Input: 400, Output: 300
-- Input: 300, Output: action_size (1)
+- Input: 300, Output: action_size (4)
 
 Model Parameters:
 - Replay buffer size: 1.000.000
