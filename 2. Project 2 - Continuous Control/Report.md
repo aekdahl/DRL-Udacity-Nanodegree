@@ -18,6 +18,7 @@ We are training the agents on 1000 episodes with a maximum of 1000 iterations (t
 - Number of states: 33
 - Number of possible actions: 4 
     - *Corresponding to the torque of the double-jointed arm*
+    - *each action value are clipped to stay within the -1,1 boundary*
 - Rewards: 
     - Correct location per timestep: +0.1
 
@@ -42,6 +43,8 @@ Agent Parameters:
 - Episodes: 1000
 - Maximum timesteps: 1000
 
+=== ADD SOME EXPLANATIONS AND ELABORATE ===
+
 ### 4. Result
 As the below results show, the model was able to solve the environment after 500 episodes. The maximum score achieved was 30.01 across 100 consecutive iterations (after which the training was aborted). Note that the below chart only illustrates episode 400 to 500 even if they are denoted 0 - 100.
 
@@ -52,5 +55,5 @@ As the below results show, the model was able to solve the environment after 500
 ### 5. Next steps
 
 - Improving the results by tweaking the many static variables set in this model could be a next step to take to simply try out different settings. 
-- From there, it seem that some of the addons to the DQN algorithm can be used to further improve the performance. Trying out Double DQN, Prioritized Experience Replay or Dueling DQN might be a good idea.
-- In this model we did not use the images produced by the video game as learning input to the model. Using the pixels of the images with CNN layers may also improve the results. Quite possibly with a trade off on computational performance and cost though.
+- Further, Prioritized Experience Replay can be a good idea since we use an experience replay buffert.
+- Last, I decided to use a DDPG model, however, there are other possible models to use such as PPO or TRPO that could be a better fit for the challenge.
