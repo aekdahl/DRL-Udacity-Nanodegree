@@ -4,3 +4,6 @@ This repository is contain the portfolio of projects completed in the Udacity Na
 
 Content:
 1. Project 1 - Navigation
+2. Project 2 - Continuous Control
+3. Project 3 - Collaboration and Competition
+	
