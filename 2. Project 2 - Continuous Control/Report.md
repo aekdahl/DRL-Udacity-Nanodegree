@@ -15,7 +15,7 @@ We are training the agents on 1000 episodes with a maximum of 1000 iterations (t
 
 ### 2. Environment
 - Number of agents: 20
-- Number of states: 33
+- Number of state variables: 33
 - Number of possible actions: 4 
     - *Corresponding to the torque of the double-jointed arm*
     - *Each action value are clipped to stay within the (-1,1) boundary*
@@ -23,7 +23,7 @@ We are training the agents on 1000 episodes with a maximum of 1000 iterations (t
     - Correct location per timestep: +0.1
 
 ### 3. Learning Model
-The model is a Deep Neural Network with 3 fully connected layers. It takes the 33 different states from the state vector as input, and outputs the action represented by a vector containing four continouos values. 
+The model is a Deep Neural Network with 3 fully connected layers. It takes the 33 different state variables from the state vector as input, and outputs the action represented by a vector containing four continouos values. 
 
 ***Actor***
 - Input: state_size (33), Output: 400
