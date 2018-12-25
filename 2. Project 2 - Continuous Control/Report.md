@@ -43,7 +43,7 @@ Agent Parameters:
 - Maximum timesteps: 1000
 
 ### 4. Result
-As the below results show, the model was able to solve the environment after 500 episodes. The maximum score achieved was 30.01 across 100 consecutive iterations (after which the training was aborted).
+As the below results show, the model was able to solve the environment after 500 episodes. The maximum score achieved was 30.01 across 100 consecutive iterations (after which the training was aborted). Note that the below chart only illustrates episode 400 to 500 even if they are denoted 0 - 100.
 
 |           |            |
 | :-------------: |:-------------:|
