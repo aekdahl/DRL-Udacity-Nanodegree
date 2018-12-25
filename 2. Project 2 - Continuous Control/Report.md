@@ -9,7 +9,7 @@ This notebook showcase how to train 20 Unity ML-Agents to control double-jointed
 ![Unity Environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/images/reacher.png "Unity Environment")
 
 ### 1. Problem statement and approach
-Essentialy, the agent needs to learn how to control a double-jointd arm to stay as close to the target loacation as possible for as many timesteps as possible. The agent does this by setting four continouos values in an action vector that control the torque of the arm joints. The goal for the agent is then to simply figure out how to end up with as high reward as possible. The problem is considered solved when the agent (in this case the average of 20 agents) achieves +30 points across 100 consequtive runs in the environment.
+Essentialy, the agent needs to learn how to control a double-jointed arm to stay as close to the target loacation as possible for as many timesteps as possible. The agent does this by setting four continouos values in an action vector that control the torque of the arm joints. The goal for the agent is then to simply figure out how to end up with as high reward as possible. The problem is considered solved when the agent (in this case the average of 20 agents) achieves +30 points across 100 consequtive runs in the environment.
 
 We are training the agents on 1000 episodes with a maximum of 1000 iterations (timesteps) in each episode. The aim is to reach +30 points to solve the environment. The training will stop when the environment is solved.
 
@@ -35,15 +35,15 @@ Model Parameters:
 - Learning Rate Critic: 0.001
 - Learning Rate Actor: 0.001
 - Weight decay of critic: 0
+- Learning intervals: 20
+- Learning times: 10
 
 Agent Parameters:
 - Episodes: 1000
 - Maximum timesteps: 1000
-- Learning intervals: 20
-- Learning times: 10
 
 ### 4. Result
-As the below results show, the model was able to solve the environment after 600 iterations (episodes) but was able to further improve performance until it kind of evens out around 1000 episodes or so. The maximum score achieved was 16.70 across 100 consecutive iterations.
+As the below results show, the model was able to solve the environment after 500 episodes. The maximum score achieved was 30.01 across 100 consecutive iterations (after which the training was aborted).
 
 |           |            |
 | :-------------: |:-------------:|
