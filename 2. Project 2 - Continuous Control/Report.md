@@ -53,7 +53,7 @@ Agent Parameters:
 #### Deep Deterministic Policy Gradient (DDPG)
 As indicated in the project information pages, I set out to use the DDPG algorithm to solve the task. I started from the DDPG model implemented in the Pendulum example at Udacity and expanded on it to utilize multiple agents (20). Initially, the learning was disapointing and it was very hard to get any decent scores using only this modified version of the pendulum implementation. Two further tweaks made major improvements to the model, 1) Gradient clipping and 2) Batch normalization.
 
-The gradient clipping made the model more reliable by avoiding too large gradients, and thereby weights, preventing the model from learning properly. Implementing the clipping as hinted in the projects benchmark implementation using ```python torch.nn.utils.clip_grad_norm_(self.critic_local.parameters(), 1)``` on the critic introduced an upper limit of the gradients that improved the learning of the algorithm.
+The gradient clipping made the model more reliable by avoiding too large gradients, and thereby weights, preventing the model from learning properly. Implementing the clipping as hinted in the projects benchmark implementation using ```torch.nn.utils.clip_grad_norm_(self.critic_local.parameters(), 1)``` on the critic introduced an upper limit of the gradients that improved the learning of the algorithm.
 
 The Batch nomarlization of the input data to the network improved the learning somewhat similar to the gradient clipping as it ensured the inbound values from each episode and environment was properly scaled, and thereby comparable across each learning event.
 
