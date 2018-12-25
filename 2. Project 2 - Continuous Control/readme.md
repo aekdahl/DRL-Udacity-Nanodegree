@@ -15,13 +15,10 @@ Ensure python 3.6 is installed on your system, then install and import the requi
 !pip install torch
 from unityagents import UnityEnvironment
 import numpy as np
-import random
-from collections import namedtuple, deque
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import torch.optim as optim
 
 import matplotlib.pyplot as plt
 %matplotlib inline
