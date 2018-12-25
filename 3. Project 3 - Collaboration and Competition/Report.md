@@ -51,7 +51,7 @@ Agent Parameters:
 - Episodes: 2000
 - Maximum timesteps: 1000
 
-As a basis of my work in this project, I used the model built in the second project on continuous control. A DDPG, or a Deep Deterministic Policy Gradient Algorithm with gradient clipping to avoid too high gradients and batch normalization to ensure interpretation of values across multiple environments and episodes for training. As with the DQN model in project 1, this model also use experience replay buffer to collect and sample the data used for training the algorithm. Furthermore, I adjusted the code to cater for a 2 agent setup and the layers of the neural net for a smaller set of state variables (24).
+As a basis of my work in this project, I used the model built in the second project on continuous control. A DDPG, or a Deep Deterministic Policy Gradient Algorithm with gradient clipping to avoid too high gradients and batch normalization to ensure interpretation of values across multiple environments and episodes for training. As with the DQN model in project 1, this model also use experience replay buffer to collect and sample the data used for training the algorithm. Starting from that, I adjusted the code to cater for a 2 agent setup. At last, I updated the layers of the neural net for a smaller set of state variables (24).
 
 ### 4. Result
 As the below results show, the model was able to solve the environment after 335 episodes. The maximum score achieved was 0.5 across 100 consecutive iterations (after which the training was aborted).
