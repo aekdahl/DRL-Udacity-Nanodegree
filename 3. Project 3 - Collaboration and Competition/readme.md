@@ -1,11 +1,10 @@
-Collaboration and Competition
-# Project 1 - Navigation
+# Project 3 - Collaboration and Competition
 
-![Unity Environment](https://github.com/aekdahl/DRL-Udacity-Nanodegree/blob/master/1.%20Project%201%20-%20Navigation/img1.png "Unity Environment")
+![Unity Environment](https://github.com/Unity-Technologies/ml-agents/raw/master/docs/images/tennis.png "Unity Environment")
 
 ## Project Overview
 
-This is the first project in the Udacity Nanodegree for Deep reinforcement Learning. The notebook showcase how to train a Unity ML-Agent to navigate in a game-like environment and picking yellow bananas while avoiding blue ones. Essentialy, the agent learns to navigate and solves a classification problem (it needs to distinguish between blue and yellow bananas). The agent does this by selecting one out of 4 possible actions in each state (time point) and gets rewarded +1 when it selets a yellow banana, and -1 for picking a blue one. The goal for the agent is then to simply figure out how to end up with as high reward as possible.
+This is the third and final project in the Udacity Nanodegree for Deep reinforcement Learning. The notebook showcase how to train two competing Unity ML-Agents to play a "slightly" modified version of tennis. Essentialy, each agent learns to keep the ball from touching the ground and to hit it back to the opponents side. The agents does this by providing an action vector in each state (timestep) and gets rewarded +0.1 when it manage to hit the ball over the net, and -0.01 failing to do so, and letting the ball hit the ground.
 
 ## Get started
 
@@ -16,8 +15,6 @@ Ensure python 3.6 is installed on your system, then install and import the requi
 !pip install torch
 from unityagents import UnityEnvironment
 import numpy as np
-import random
-from collections import namedtuple, deque
 
 import torch
 import torch.nn as nn
@@ -29,4 +26,4 @@ import matplotlib.pyplot as plt
 ```
 
 ## Instructions
-Run the Project 1 - Navigation notebook to get step by step instructions on the code and how to train the agent.
+Run the Project 3 - Collaboration and Competition notebook to get step by step instructions on the code and how to train the agents.
