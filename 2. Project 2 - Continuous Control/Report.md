@@ -47,7 +47,7 @@ As the below results show, the model was able to solve the environment after 500
 
 |           |            |
 | :-------------: |:-------------:|
-| ![Results graph](https://github.com/aekdahl/DRL-Udacity-Nanodegree/blob/master/1.%20Project%201%20-%20Navigation/img2.png "Results graph")  | ![Results table](https://github.com/aekdahl/DRL-Udacity-Nanodegree/blob/master/1.%20Project%201%20-%20Navigation/img3.png "Results table") |
+| ![Results graph](https://github.com/aekdahl/DRL-Udacity-Nanodegree/blob/master/2.%20Project%202%20-%20Continuous%20Control/32DF63ED-C0C0-4B4A-B81C-A38CE98387B0.png "Results graph")  | ![Results table](https://github.com/aekdahl/DRL-Udacity-Nanodegree/blob/master/2.%20Project%202%20-%20Continuous%20Control/24EBF224-C5AA-40FD-B2E4-7D782166CE73.png "Results table") |
 
 ### 5. Next steps
 
